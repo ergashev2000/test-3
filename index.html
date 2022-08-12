@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center m-5">Movies catalog</h1>
+        <div class="row">
+            <div class="col-lg-4">
+                <form action="https://echo.htmlacademy.ru/" method="post" class="">
+                    <div class="col">
+                        <div class="row gy-4 d-flex flex-column">
+                            <input type="text" name="name" class="form-control" placeholder="Film name" required>
+                            <input type="text" name="number" class="form-control" placeholder="Number" required>
+                            <select class="form-select " required>
+                                <option selected>All</option>
+                                <option>Jangari kino</option>
+                                <option>Fantastik kino</option>
+                            </select>
+                            <select class="form-select " required>
+                                <option selected>Rating (high to low)</option>
+                                <option>High</option>
+                                <option>Low</option>
+                            </select>
+                            <button type="submit" class="btn px-5 mt-4 send__btn">Search </button>
+                        </div>
+                    </div>
+                    <div class="col my-4 p-0">
+                        <h4>Bookmarked movies</h4>
+                        <div class="card" style="width: 18rem;">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <p class="p-0 m-1">Avergers: Infinity War</p>
+                                    <div class="btn p-1 btn-danger">Remove</div>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="p-0 m-1">Avergers: Infinity War</p>
+                                    <div class="btn p-1 btn-danger">Remove</div>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="p-0 m-1">Avergers: Infinity War</p>
+                                    <div class="btn p-1 btn-danger">Remove</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-lg-8">
+                <h4>Search result: 39</h4>
+                <div class="alert alert-primary" role="alert">
+                    Use the from on the left to search for a movies
+                </div>
+                <div class="col d-flex">
+                    <div class="card m-3">
+                        <img class="card-img-top"
+                            src="./images/https___cdn.cnn.com_cnnnext_dam_assets_190403144228-avengers-endgame-thumb-imax-poster.jpg"
+                            alt="Card image cap">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Film title</h5>
+                            <p class="card-text">
+                                <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.752 1.78234C19.752 1.57514 19.8344 1.37644 19.9809 1.22995C20.1275 1.08346 20.3262 1.00119 20.5334 1.00122C20.7406 1.00126 20.9393 1.0836 21.0858 1.23014C21.2323 1.37668 21.3145 1.57541 21.3145 1.78261L21.3144 2.56386L22.8769 2.56413C23.7057 2.56427 24.5005 2.89365 25.0864 3.4798C25.6724 4.06595 26.0015 4.86086 26.0013 5.68967L26.0011 7.25217L1.00106 7.24785L1.00133 5.68535C1.00147 4.85655 1.33085 4.06175 1.917 3.4758C2.50315 2.88985 3.29807 2.56075 4.12687 2.56089L5.68937 2.56116L5.6895 1.77991C5.68954 1.57271 5.77188 1.37401 5.91842 1.22752C6.06496 1.08104 6.26369 0.99876 6.47089 0.998796C6.67809 0.998832 6.87679 1.08118 7.02327 1.22771C7.16976 1.37425 7.25204 1.57298 7.252 1.78018L7.25187 2.56143L19.7519 2.56359L19.752 1.78234ZM11.3087 17.009C10.3322 17.0088 9.45888 16.2524 9.45907 15.1649C9.45929 13.8649 10.2828 13.2432 11.2719 13.2434C12.1875 13.2435 13.0968 13.8484 13.0966 15.1343C13.0964 16.4109 12.2478 17.0092 11.3087 17.009V17.009Z"
+                                        fill="black" />
+                                    <path
+                                        d="M26.0008 22.8729L25.9984 8.81036L0.998381 8.81468L1.00081 22.8772C1.00095 23.706 1.33033 24.5008 1.91648 25.0867C2.50263 25.6727 3.29755 26.0018 4.12635 26.0016L22.8763 25.9984C23.7051 25.9983 24.4999 25.6689 25.0859 25.0827C25.6718 24.4966 26.001 23.7017 26.0008 22.8729ZM15.588 20.984C13.8536 20.9843 13.0003 19.786 12.9267 18.7861L13.9939 18.7859C14.0611 19.364 14.5988 20.067 15.6363 20.0668C16.955 20.0666 17.6688 18.7415 17.6747 16.6852L17.6326 16.6852C17.3936 17.3322 16.6375 17.9198 15.4718 17.92C14.1406 17.9202 12.8529 16.9673 12.8526 15.1548C12.8523 13.3783 14.2131 12.328 15.6599 12.3278C17.4912 12.3275 18.7117 13.4741 18.7122 16.496C18.7127 19.3163 17.5536 20.9821 15.588 20.9825L15.588 20.984ZM11.0709 12.4926L11.0723 20.8239L20.0012 21.2L20 14L9.99609 13.6241C9.543 13.8679 8.61654 14.4368 8.03067 14.8385L22 13.6241C22.6575 13.1632 14.2912 10.8772 15 10.5L11.0693 12.4926L11.0709 12.4926Z"
+                                        fill="black" />
+                                </svg>
+                                2018
+                            </p>
+                            <p>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.1134 21.7963L13.056 16.2998L5.53938 21.4373L8.67975 12.8915L1.62233 7.395L10.612 7.61328L13.7592 -0.877746L16.1723 7.78478L25.162 8.00305L17.6455 13.1406L20.1134 21.7963Z"
+                                        fill="#FFCE31" />
+                                </svg>
+                                8.7
+                            </p>
+                            <div class="btn__all d-flex">
+                                <div class="btn btn-outline-info">Watch trailer</div>
+                                <div class="btn btn-outline-info">More info</div>
+                                <div class="btn btn-outline-info">Bookmark</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card m-3">
+                        <img class="card-img-top"
+                            src="./images/https___cdn.cnn.com_cnnnext_dam_assets_190403144228-avengers-endgame-thumb-imax-poster.jpg"
+                            alt="Card image cap">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Film title</h5>
+                            <p class="card-text">
+                                <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.752 1.78234C19.752 1.57514 19.8344 1.37644 19.9809 1.22995C20.1275 1.08346 20.3262 1.00119 20.5334 1.00122C20.7406 1.00126 20.9393 1.0836 21.0858 1.23014C21.2323 1.37668 21.3145 1.57541 21.3145 1.78261L21.3144 2.56386L22.8769 2.56413C23.7057 2.56427 24.5005 2.89365 25.0864 3.4798C25.6724 4.06595 26.0015 4.86086 26.0013 5.68967L26.0011 7.25217L1.00106 7.24785L1.00133 5.68535C1.00147 4.85655 1.33085 4.06175 1.917 3.4758C2.50315 2.88985 3.29807 2.56075 4.12687 2.56089L5.68937 2.56116L5.6895 1.77991C5.68954 1.57271 5.77188 1.37401 5.91842 1.22752C6.06496 1.08104 6.26369 0.99876 6.47089 0.998796C6.67809 0.998832 6.87679 1.08118 7.02327 1.22771C7.16976 1.37425 7.25204 1.57298 7.252 1.78018L7.25187 2.56143L19.7519 2.56359L19.752 1.78234ZM11.3087 17.009C10.3322 17.0088 9.45888 16.2524 9.45907 15.1649C9.45929 13.8649 10.2828 13.2432 11.2719 13.2434C12.1875 13.2435 13.0968 13.8484 13.0966 15.1343C13.0964 16.4109 12.2478 17.0092 11.3087 17.009V17.009Z"
+                                        fill="black" />
+                                    <path
+                                        d="M26.0008 22.8729L25.9984 8.81036L0.998381 8.81468L1.00081 22.8772C1.00095 23.706 1.33033 24.5008 1.91648 25.0867C2.50263 25.6727 3.29755 26.0018 4.12635 26.0016L22.8763 25.9984C23.7051 25.9983 24.4999 25.6689 25.0859 25.0827C25.6718 24.4966 26.001 23.7017 26.0008 22.8729ZM15.588 20.984C13.8536 20.9843 13.0003 19.786 12.9267 18.7861L13.9939 18.7859C14.0611 19.364 14.5988 20.067 15.6363 20.0668C16.955 20.0666 17.6688 18.7415 17.6747 16.6852L17.6326 16.6852C17.3936 17.3322 16.6375 17.9198 15.4718 17.92C14.1406 17.9202 12.8529 16.9673 12.8526 15.1548C12.8523 13.3783 14.2131 12.328 15.6599 12.3278C17.4912 12.3275 18.7117 13.4741 18.7122 16.496C18.7127 19.3163 17.5536 20.9821 15.588 20.9825L15.588 20.984ZM11.0709 12.4926L11.0723 20.8239L20.0012 21.2L20 14L9.99609 13.6241C9.543 13.8679 8.61654 14.4368 8.03067 14.8385L22 13.6241C22.6575 13.1632 14.2912 10.8772 15 10.5L11.0693 12.4926L11.0709 12.4926Z"
+                                        fill="black" />
+                                </svg>
+                                2018
+                            </p>
+                            <p>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.1134 21.7963L13.056 16.2998L5.53938 21.4373L8.67975 12.8915L1.62233 7.395L10.612 7.61328L13.7592 -0.877746L16.1723 7.78478L25.162 8.00305L17.6455 13.1406L20.1134 21.7963Z"
+                                        fill="#FFCE31" />
+                                </svg>
+                                8.7
+                            </p>
+                            <div class="btn__all d-flex">
+                                <div class="btn btn-outline-info">Watch trailer</div>
+                                <div class="btn btn-outline-info">More info</div>
+                                <div class="btn btn-outline-info">Bookmark</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col mx-auto text-center">
+                    <div class="btn-group bottom_btn " role="group" aria-label="First group">
+                        <button type="button" class="btn btn-info">1</button>
+                        <button type="button" class="btn btn-outline-info">2</button>
+                        <button type="button" class="btn btn-outline-info">3</button>
+                        <button type="button" class="btn btn-outline-info">4</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
