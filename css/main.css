@@ -10,3 +10,10 @@
 .btn-info{
     color: #fff;
 }
+
+@media screen and(max-width: 1098px){
+    .full{
+        display: none;
+        flex-direction: column;
+    }
+}
