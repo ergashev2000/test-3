@@ -1,0 +1,19 @@
+.send__btn{
+    color: #fff;
+    background-color: #3478F6;
+
+}
+.btn__all div{
+    font-size: 10px;
+    margin: 5px;
+}
+.btn-info{
+    color: #fff;
+}
+
+@media screen and(max-width: 1098px){
+    .full{
+        display: none;
+        flex-direction: column;
+    }
+}

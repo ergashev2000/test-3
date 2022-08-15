@@ -1,0 +1,22 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$my-colors:(
+    'qizil': red,
+    'sariq': rgb(172, 172, 47),
+    'green': green,
+    'blue': blue,
+    'bg-gray': gray,
+    'black': black,
+    'white': #fff
+);
+
+$body-bg: #000;
+$body-color: rgb(223, 58, 58);
+
+
+$theme-colors: map-merge($theme-colors, $my-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+ 
